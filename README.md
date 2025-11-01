@@ -16,17 +16,33 @@ A C++ program that solves the 24 Game puzzle - given four numbers, find an expre
   - `"all correct!"` if all answers are valid and evaluate to 24
   - Error messages for incorrect solutions
 
+## executable file
+"a.out" is an executable file I've created.
+
 ## Usage
 
 1. **Interactive Mode** (calculate.cpp):
    ```bash
-   ./calculate
-   # Enter four numbers: 2 7 8 8
-   # Output: (8*(7-(8/2))) = 24#
+   
+   ./a.out
+   example input:
+   3 3 8 8
+   4 4 6 6 
+   4 4 10 10
+   3 3 7 7 
+   1 2 3 4
+   
+   example output:
+   Case #1: 8/(3-(8/3))
+   Case #2: You try it.
+   Case #3: ((10*10)-4)/4
+   Case #4: ((3/7)+3)*7
+   Case #5: ((1+2)+3)*4
    ```
    
 2. **Validation Mode** (examine.cpp):
    ```bash
-   ./examine
-   # Checks all test cases in 24.in against 24.ans
+   ./a.out
+   all correct!
+   (My examine.cpp reads inputs from 24.in and 24.ans to judge whether the answer and format is correct, so one can modify the content in 24.in and 24.ans to change the output of my program. )
    ```
