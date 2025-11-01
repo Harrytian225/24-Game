@@ -16,15 +16,18 @@ A C++ program that solves the 24 Game puzzle - given four numbers, find an expre
   - `"all correct!"` if all answers are valid and evaluate to 24
   - Error messages for incorrect solutions
 
-## executable file
-"a.out" is an executable file I've created.
+## Compilation
+
+```bash
+g++ -std=c++11 -O2 24-Game.cpp -o 24-Game
+./24-Game
+```
 
 ## Usage
 
 1. **Interactive Mode** (calculate.cpp):
    ```bash
    
-   ./a.out
    example input:
    3 3 8 8
    4 4 6 6 
@@ -42,7 +45,6 @@ A C++ program that solves the 24 Game puzzle - given four numbers, find an expre
    
 2. **Validation Mode** (examine.cpp):
    ```bash
-   ./a.out
    all correct!
    (My examine.cpp reads inputs from 24.in and 24.ans to judge whether the answer and format is correct, so one can modify the content in 24.in and 24.ans to change the output of my program. )
    ```
